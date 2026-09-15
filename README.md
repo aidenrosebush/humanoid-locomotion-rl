@@ -25,7 +25,7 @@ Mean reward per episode, evaluated over 100 episodes per seed after hyperparamet
 - **TD3 performed best on the base task.** Its deterministic policy lets the agent settle into a
   precise, consistent gait, while clipped double Q-learning and target policy smoothing keep training
   stable. The reward curve is notably flat at the top.
-- **SAC was the most sample-efficient early** expected from an off-policy method that reuses data â
+- **SAC was the most sample-efficient early** expected from an off-policy method that reuses data
   but its maximum-entropy objective keeps it exploring, producing high variance across seeds and the
   lowest asymptotic reward.
 - **PPO converged slowest**, since on-policy training needs fresh data for every update, but its
@@ -42,17 +42,17 @@ The flat plane is replaced with a procedurally generated heightfield giving smal
 The reward function was adjusted so that progress is measured along the surface rather than the
 horizontal plane:
 
-- Standing height is measured **relative to the feet** (`h_rel = h_head â h_feet`), so the standing
+- Standing height is measured **relative to the feet** (`h_rel = h_head - h_feet`), so the standing
   reward stays consistent on slopes.
-- Forward velocity is **projected onto the local tangent plane** (`v_forward = v_tan Â· f_torso`),
+- Forward velocity is **projected onto the local tangent plane** (`v_forward = v_tan · f_torso`),
   so the agent is not penalised for climbing and does not learn to avoid hills.
 
 ## Implementations used
 
 This project is a comparative evaluation; the algorithm implementations are third-party:
 
-- **PPO and SAC** â [MuJoCo Playground](https://playground.mujoco.org/) (Brax-backed, highly parallel)
-- **TD3** â [FastTD3](https://arxiv.org/abs/2505.22642) (Seo et al., 2025), optimised for humanoid control
+- **PPO and SAC** [MuJoCo Playground](https://playground.mujoco.org/) (Brax-backed, highly parallel)
+- **TD3** [FastTD3](https://arxiv.org/abs/2505.22642) (Seo et al., 2025), optimised for humanoid control
 
 Training runs were tracked with [Weights & Biases](https://wandb.ai/) (`--use_wandb`).
 
