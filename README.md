@@ -25,12 +25,12 @@ Mean reward per episode, evaluated over 100 episodes per seed after hyperparamet
 - **TD3 performed best on the base task.** Its deterministic policy lets the agent settle into a
   precise, consistent gait, while clipped double Q-learning and target policy smoothing keep training
   stable. The reward curve is notably flat at the top.
-- **SAC was the most sample-efficient early** â expected from an off-policy method that reuses data â
+- **SAC was the most sample-efficient early** expected from an off-policy method that reuses data â
   but its maximum-entropy objective keeps it exploring, producing high variance across seeds and the
   lowest asymptotic reward.
 - **PPO converged slowest**, since on-policy training needs fresh data for every update, but its
   trust-region updates produced a smooth monotonic rise that eventually overtook SAC.
-- **On uneven terrain, TD3 still learned to traverse** (â 962), but with slower convergence and much
+- **On uneven terrain, TD3 still learned to traverse** (962), but with slower convergence and much
   higher variance in early training, reflecting the harder physics interactions. Note this run used
   3 seeds against 5 for the baseline, so the comparison is indicative rather than strict.
 
