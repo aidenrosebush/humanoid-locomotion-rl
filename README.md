@@ -13,10 +13,10 @@ Mean reward per episode, evaluated over 100 episodes per seed after hyperparamet
 
 | Algorithm | Environment | Mean reward / episode | Seeds |
 |-----------|-------------|----------------------:|------:|
-| **TD3**   | HumanoidWalk (flat)      | **â 991** | 5 |
-| PPO       | HumanoidWalk (flat)      | â 974 | 5 |
-| SAC       | HumanoidWalk (flat)      | â 875 | 5 |
-| TD3       | HumanoidWalk + obstacles | â 962 | 3 |
+| **TD3**   | HumanoidWalk (flat)      | **991** | 5 |
+| PPO       | HumanoidWalk (flat)      | 974 | 5 |
+| SAC       | HumanoidWalk (flat)      | 875 | 5 |
+| TD3       | HumanoidWalk + obstacles | 962 | 3 |
 
 ![Performance comparison: SAC vs PPO vs TD3](figures/comparison_plot_extrapolated.png)
 
