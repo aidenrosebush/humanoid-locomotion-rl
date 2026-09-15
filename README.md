@@ -3,7 +3,7 @@
 Comparing **PPO**, **Soft Actor-Critic (SAC)**, and **TD3** for humanoid locomotion in the MuJoCo
 physics engine on flat ground, and on procedurally generated uneven terrain.
 
-![Humanoid on procedurally generated heightfield terrain](figures/terrain.png)
+![Humanoid on procedurally generated heightfield terrain](figures/humanoid_uneven.png)
 
 *The uneven-terrain environment: a procedurally generated heightfield replaces the default flat plane.*
 
@@ -18,7 +18,7 @@ Mean reward per episode, evaluated over 100 episodes per seed after hyperparamet
 | SAC       | HumanoidWalk (flat)      | â 875 | 5 |
 | TD3       | HumanoidWalk + obstacles | â 962 | 3 |
 
-![Performance comparison: SAC vs PPO vs TD3](figures/comparison.png)
+![Performance comparison: SAC vs PPO vs TD3](figures/comparison_plot_extrapolated.png)
 
 **What we found**
 
@@ -34,7 +34,7 @@ Mean reward per episode, evaluated over 100 episodes per seed after hyperparamet
   higher variance in early training, reflecting the harder physics interactions. Note this run used
   3 seeds against 5 for the baseline, so the comparison is indicative rather than strict.
 
-![TD3 on the modified terrain](figures/modified_terrain.png)
+![TD3 on the modified terrain](figures/aggregated_rewards.png)
 
 ### Environment modifications
 
