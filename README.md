@@ -61,11 +61,11 @@ Training runs were tracked with [Weights & Biases](https://wandb.ai/) (`--use_wa
 This was a three-person course project (ECE1508: Reinforcement Learning, Fall 2025,
 University of Toronto).
 
-- **Aiden Rosebush** â found and organised the initial PPO, SAC, and TD3 implementations; wrote the
+- **Aiden Rosebush** found and organised the initial PPO, SAC, and TD3 implementations; wrote the
   majority of the final report.
-- **John (Chang-Won) Lee** â completed the implementations, added multi-GPU training support, and
+- **John (Chang-Won) Lee** completed the implementations, added multi-GPU training support, and
   explored hyperparameter tuning.
-- **David Marcovitch** â extended the flat-terrain humanoid environment with bumps, enabling the
+- **David Marcovitch** extended the flat-terrain humanoid environment with bumps, enabling the
   uneven-terrain robustness test.
 
 # Installation
