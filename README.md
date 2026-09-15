@@ -1,7 +1,7 @@
 # Humanoid Locomotion with Deep Reinforcement Learning
 
 Comparing **PPO**, **Soft Actor-Critic (SAC)**, and **TD3** for humanoid locomotion in the MuJoCo
-physics engine â on flat ground, and on procedurally generated uneven terrain.
+physics engine on flat ground, and on procedurally generated uneven terrain.
 
 ![Humanoid on procedurally generated heightfield terrain](figures/terrain.png)
 
